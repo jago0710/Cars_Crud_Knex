@@ -1,0 +1,362 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a{
+  text-decoration: none ;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /*border: 1px solid rgba(171, 218, 229, 0.72);*/
+}
+
+body{
+  display: block;
+  background-image: linear-gradient(#040b38, #18347c);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 70px;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+/*------------------BARRA DE NAVEGACIÓN---------------*/
+.navegador{
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0.4rem);
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  justify-content: center;
+}
+
+.apartados{
+  display: flex;
+  flex-direction: row;
+}
+
+li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  transition-duration: 1s;
+}
+
+li a:hover{
+  cursor: crosshair;
+  color: rgba(243, 114, 44, 0.97);
+  text-decoration: underline;
+}
+
+.apartados li{
+  list-style: none;
+  font-style: italic;
+  width: auto;
+  margin: 0px 20px 0px 20px;
+}
+/*-----------------INDEX-------------------*/
+
+.base-index{
+  width: 100%;
+  height: 810px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-bienvenida{
+  width: 70%;
+  height: 50%;
+  color: white;
+  border-radius: 40px;
+  background: rgba(222, 220, 220, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  padding: 15vh;
+}
+
+.card-bienvenida h1{
+  font-size: 50px;
+}
+
+.card-bienvenida a{
+  color: #dc6315;
+  width: max-content;
+  padding: 20px;
+  background: white;
+  font-style: oblique;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.card-bienvenida a:hover{
+  color: #dc6315;
+  border-start-end-radius: 80px;
+  border-end-end-radius: 80px;
+  box-shadow: 0px 1px 10px 0px white;
+}
+/*----------------------Items------------------------*/
+
+.base{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.card-base{
+  background: linear-gradient(rgb(16, 46, 101), rgb(6, 20, 68));
+  display: flex;
+  flex-direction: row;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.img-buttons-base{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.img {
+  margin: auto;
+  align-items: center;
+  padding: 5px;
+}
+
+.img img{
+  height: 200px;
+  width: 270px;
+  object-fit: cover;
+  border-radius: 5px;
+  mask-image: linear-gradient(#1b1b49 70%, transparent  100%);
+}
+
+.buttons{
+  display: grid;
+  grid-template-rows:auto auto;
+  margin: auto;
+  gap: 30px;
+}
+
+.buttons img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  background: rgba(218, 198, 227, 0.346);
+  padding: 7px;
+  border-radius: 7px;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.buttons img:hover{
+  background: rgba(255, 255, 255, 0.37);
+  box-shadow: 0px 0px 4px 0px #797979;
+  opacity: 1;
+}
+
+.attribute-base{
+  padding: 10px;
+  //background: linear-gradient(rgba(128, 54, 187, 0.46), rgba(162, 138, 195, 0.264));
+  border-left: 1px solid rgba(13, 76, 129, 0.83);
+  border-radius: 7px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 430px;
+  justify-content: space-around;
+}
+
+.attribute-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.card-add{
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-add a{
+  border-radius: 6px;
+  border-style: dashed;
+  height: 18vh;
+  width: 85vh;
+  text-align: center;
+  line-height: 18vh;
+  font-size: 50px;
+  color: #a1a1a1;
+  background: rgba(173, 173, 173, 0.36);
+  backdrop-filter: blur(0.2rem);
+}
+
+
+/*-------CONTACTANOS-------*/
+
+.background-contactanos{
+  display: grid;
+  background-size: cover;
+  width: 100%;
+  height: 19%;
+  color: white;
+  font-family: "SeatBlack",sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*FORMULARIO*/
+
+#FORMULARIO{
+  display: grid;
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  width: 100%;
+  font-family: "Microsoft JhengHei";
+  justify-content: center;
+}
+
+.c-form{
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+input{
+  font-size: 17px;
+  width: 600px;
+  height: 1.3cm;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.mensaje{
+  width: 100%;
+  height: 100px;
+  max-height: 200px;
+  min-height: 50px;
+  border-radius: 5px;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.button-send{
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  background-color: rgb(227, 101, 24);
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.button-send:hover{
+  border-radius: 15px;
+  background-color: rgb(241, 236, 232);
+  color: #ea7a09;
+}
+
+/*----------------------SOBRE-NOSOTROS----------------------*/
+
+.contenedor-nosotros{
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  color: white;
+  font-family: "Microsoft JhengHei";
+}
+
+
+.informacion{
+  display: grid;
+  margin: 40px;
+  justify-items: center;
+}
+
+.informacion p{
+  width: 50%;
+  word-spacing: 2px;
+  font-size: 22px;
+  text-align: center;
+}
+
+/*PLANTILLA - DESCRIPTIVA*/
+
+.plantilla-descriptiva{
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  justify-items: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  border-top: 0.5px solid #050a44;
+}
+.plantilla-descriptiva img{
+  margin: 40px 40px 10px 40px;
+  border-radius: 10px;
+  width: 17cm;
+  height: 9cm;
+  object-fit: cover;
+}
+
+.tabla-informativa {
+  display: grid;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  font-family: "Microsoft JhengHei";
+}
+
+.atributo{
+  border: 1px solid white;
+  width: 9cm;
+  font-size: 19px;
+  padding: 10px;
+  margin: 0px;
+  color: #49b2ea;
+}
+
+.valor{
+  border: 1px solid white;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+}
+
+/*FOOTER*/
+footer{
+  background-color: rgb(3, 16, 35);
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-family: sans-serif;
+}

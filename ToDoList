@@ -1,0 +1,10 @@
+1. Instalar Knex y SQLite para pasar de los arrays list a BBDD
+2. Crear el knex haciendo referencia a mi BBDD Proyecto
+3. Pasamos todas las funciones de las apis para que sean utilizados con la BBDD conectada
+4. Comprobar las funciones nuevas del CRUD
+5. Crear una nueva tabla de contactos
+6. Hacer el formulario de contactanos
+7. Hacer una funcion para guardar los datos del cliente en la tabla contacto
+8. Instalar swager para crear el API DOC
+9. Hacer la conexión del Swagger con las APIS de mi proyecto
+10. Hacer un redireccionamiento a /api-docs

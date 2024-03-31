@@ -1,0 +1,40 @@
+{
+  "name": "pt3-jago",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.18",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "http-errors": "~1.6.3",
+    "knex": "^3.1.0",
+    "morgan": "~1.9.1",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "description": "Page-web dinamic of cars",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "55157653l@iespoblenou.org"
+  },
+  "keywords": [
+    "**********"
+  ],
+  "author": "Joel Gonzales Omonte",
+  "license": "ISC"
+}

@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <title>Modificando..</title>
+</head>
+<body>
+
+<!--Barra de navegación-->
+<header>
+    <%- include('partials/navbar'); %>
+</header>
+
+<h3 style="text-align: center"><%= title %></h3>
+
+<section id="FORMULARIO">
+    <form class="c-form" name="update" action="/coches/add" method='post'>
+        <label for="marca">Marca</label>
+        <select name="marca"  style="width: 100%; height: 40px; text-align: center; border-radius: 6px;">
+            <% marcas.forEach(function(marca) { %>
+                <option type="number" value="<%= marca.id %>"><%= marca.nombre %></option>
+            <% }) %>
+        </select>
+        <input type="text" name="modelo" placeholder="Modelo"required>
+        <input type="text" name="version" placeholder="Versión" equired>
+        <input type="text" name="año" placeholder="Año" required>
+        <input type="text" name="combustible" placeholder="Combustible" required>
+        <input type="text" name="imagen" placeholder="(URL)»Imagen" required>
+        <input class="button-send" type="submit" value=" ➤">
+    </form>
+</section>
+
+<%- include('partials/footer'); %>
+</body>
+</html>

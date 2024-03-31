@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<header>
+    <%- include('partials/navbar'); %>
+</header>
+
+<section class="base-index">
+    <div class="card-bienvenida">
+
+        <h1 class="title" ><%= title %></h1>
+        <p>"¡Bienvenido a nuestra página web! Aquí, te ofrecemos la increíble oportunidad de crear y gestionar tu propia lista personalizada de coches favoritos y marcas de automóviles. Con nuestra plataforma, podrás explorar una amplia gama de vehículos y marcas, seleccionar tus favoritos y organizarlos de acuerdo a tus preferencias.</p>
+        <a target="_blank" class="button-api" href="/api-docs"><b>DOCUMENTACIÓN API</b></a>
+    </div>
+</section>
+
+<%- include('partials/footer'); %>
+</body>
+</html>
